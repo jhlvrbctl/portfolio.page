@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  text-align: center;
+}
+h2::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  background: rgb(87, 173, 173);
+  display: block;
+  margin: 5px auto;
+}
+img {
+  width: 100%;
+}
+p {
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: justify;
+}
+span {
+  color: rgb(81, 131, 141);
+}
+
+#header {
+  width: 100%;
+}
+#header .header {
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(216, 218, 215);
+  position: fixed;
+  z-index: 1000;
+}
+#header .header .logo h2 {
+  font-family: cursive;
+  text-shadow: 2px 2px #fdf9f9;
+
+  color: #f1f0f0;
+}
+.logo img {
+  max-width: 100px;
+  clip-path: circle();
+}
+#header .header ul,
+a {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 20px;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1a5868;
+}
+#header #home {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(https://hmp.me/d9pg);
+  width: 100%;
+  height: calc(100vh + 70px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 100px;
+  background-repeat: no-repeat;
+  background-position: none;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  text-align: center;
+}
+#header #home .showcase h1 {
+  font-size: 4rem;
+  color: #e9e7e7;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-shadow: 3px 4px #000000;
+}
+#header #home .showcase p {
+  width: 90%;
+  align-items: center;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  color: #e9ecf0;
+}
+.container {
+  width: 100%;
+  padding: 0 100px;
+  padding-top: 100px;
+  background: rgb(165, 165, 165);
+}
+.container #about {
+  padding: 50px 0px;
+}
+.container #about h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 8px;
+  font-family: cursive;
+}
+.container #about .about {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* vertical-align: text-top; */
+}
+.container #about .about .myimage {
+  width: 30%;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.container #about .about .myimage img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 5px 20px rgb(74, 109, 119);
+  border-top: 20px solid #fff;
+}
+.container #about .about .about-content {
+  width: 70%;
+  padding: 20px;
+  /* vertical-align: top;
+  vertical-align: text-top; */
+}
+.container #about .about .about-content p {
+  text-align: justify;
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+#portfolio {
+  padding: 50px 0px;
+  width: 100%;
+}
+#portfolio h2 {
+  font-size: 40px;
+  font-family: cursive;
+  text-align: center;
+  padding: 50px 20px;
+}
+#portfolio .tech {
+  margin: 0 auto;
+  width: 100%;
+  height: 70vh;
+  border-collapse: collapse;
+  border: none;
+}
+#portfolio .tech th,
+#portfolio .tech td {
+  border: 1px solid #fff;
+  padding: 8px;
+  text-align: center;
+}
+#portfolio .tech th {
+  font-family: cursive;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(60, 119, 121);
+  color: #fff;
+}
+#portfolio .tech tr:nth-child(even) {
+  background: #f2f2f2;
+}
+#portfolio .tech tr:hover {
+  background: rgb(62, 131, 136);
+  cursor: pointer;
+}
+
+#why {
+  width: 100%;
+  padding: 100px 0px;
+}
+#why h2 {
+  font-size: 40px;
+  font-family: cursive;
+  text-align: center;
+  padding: 20px;
+}
+#why p {
+  padding: 30px 0px;
+}
+#help {
+  width: 100%;
+  padding: 100px 0px;
+}
+#help h2 {
+  font-family: cursive;
+  font-size: 40px;
+  padding: 20px 0px;
+}
+.links {
+  width: 100%;
+  padding: 20px;
+  font-weight: 300;
+}
+.links ul li a {
+  color: #000;
+  line-height: 1.7;
+  text-decoration: underline;
+  font-weight: 300;
+  color: rgb(69, 108, 114);
+}
+#contact {
+  width: 100%;
+  padding: 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #274146;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  clip-path: circle();
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #e045f5;
+  color: white;
+}
+
+#contact .contact {
+  width: 40%;
+}
+#contact .form {
+  width: 55%;
+  background-color: rgb(1, 7, 7);
+  padding: 0px 50px;
+  border-radius: 20px;
+}
+#contact .form form label,
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 5px 0px;
+  border: none;
+}
+#contact .form form label {
+  padding: 40px 0px;
+  color: rgb(106, 145, 143);
+  font-size: 20px;
+}
+#contact .form form input,
+textarea {
+  outline: none;
+  border-radius: 10px;
+}
+#contact h2 {
+  font-family: cursive;
+  font-size: 30px;
+  padding: 20px 0px;
+  color: #fff;
+}
+
+.btn button {
+  padding: 12px 25px;
+  background: rgb(79, 112, 121);
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+  margin: 20px 0px;
+  border: none;
+}
+footer {
+  padding: 20px;
+  background: rgb(38, 49, 49);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+footer p {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 970px) {
+  .fa-bars {
+    display: inline-block;
+  }
+  #header .header ul {
+    display: none;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 1300px) {
+  .container #about .about {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .container #about .about .myimage {
+    width: 100%;
+  }
+  .container #about .about .about-content {
+    width: 100%;
+  }
+  #contact {
+    display: block;
+  }
+  #contact .contact {
+    width: 100%;
+  }
+  #contact .form {
+    width: 100%;
+  }
+  #contact .form input {
+    padding: 15px;
+  }
+  #header #home .showcase h1 {
+    font-size: 2.5rem;
+    padding: 20px;
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  #header #home {
+    padding: 0px;
+    width: 100%;
+  }
+  .container {
+    padding: 20px;
+  }
+  #header .header {
+    padding: 20px 50px;
+  }
+}
